@@ -1,6 +1,7 @@
 -- Motor utilizado: SQL Server
 -- Checkpoint: TechStore - Ventas_Tech_DB
-CREATE DATABASE Ventas_Tech_DB;
+IF DB_ID('Ventas_Tech_DB') IS NULL
+    CREATE DATABASE Ventas_Tech_DB;
 GO
 
 USE Ventas_Tech_DB;
